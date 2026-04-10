@@ -112,7 +112,7 @@ static uint32_t minos_calc_level(struct minos *skplist)
 // skplist is an object called by reference
 struct minos *minos_init(bool is_thread_safe)
 {
-	int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
+	// int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
 	// log_debug("There are %d cores in your system! size of pthread_rwlock_t is %lu", num_cores,
 	// 	  sizeof(pthread_rwlock_t));
 #ifdef RELEASE_BUILD
